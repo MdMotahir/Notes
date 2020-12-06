@@ -1,0 +1,341 @@
+Microsoft Windows [Version 10.0.18362.778]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+C:\Users\User>desktop
+'desktop' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\User>cd desktop
+
+C:\Users\User\Desktop>ls
+ Codesignal.py          Mypackage                                 Zoom.lnk                 new.py
+ Ecommerc.txt          'Practice always pays good interest.pdf'  'company databases.txt'  'notes of packageing.txt'
+'MD CV.docx'            Pytest                                    desktop.ini             'notes of pytest.txt'
+'Microsoft Teams.lnk'   Sys,Os                                   'list and tuple.pdf'      pdb.py
+
+C:\Users\User\Desktop>python pdb.py
+Traceback (most recent call last):
+  File "pdb.py", line 1, in <module>
+    import pdb
+  File "C:\Users\User\Desktop\pdb.py", line 11, in <module>
+    pdb.set_trace()
+AttributeError: module 'pdb' has no attribute 'set_trace'
+
+C:\Users\User\Desktop>python pdb.py
+Traceback (most recent call last):
+  File "pdb.py", line 1, in <module>
+    import pdb
+  File "C:\Users\User\Desktop\pdb.py", line 11, in <module>
+    pdb.set_trace()
+AttributeError: module 'pdb' has no attribute 'set_trace'
+
+C:\Users\User\Desktop>python pdb.py
+Traceback (most recent call last):
+  File "pdb.py", line 1, in <module>
+    import pdb
+  File "C:\Users\User\Desktop\pdb.py", line 11, in <module>
+    pdb.set_trace
+AttributeError: module 'pdb' has no attribute 'set_trace'
+
+C:\Users\User\Desktop>python pdb.py
+Traceback (most recent call last):
+  File "pdb.py", line 1, in <module>
+    import pdb
+  File "C:\Users\User\Desktop\pdb.py", line 9, in <module>
+    pdb.set_trace()
+AttributeError: module 'pdb' has no attribute 'set_trace'
+
+C:\Users\User\Desktop>python ls.py
+> c:\users\user\desktop\ls.py(10)<module>()
+-> l=[10,20,30,40,50,60,80]
+(Pdb) help
+
+Documented commands (type help <topic>):
+========================================
+EOF    c          d        h         list      q        rv       undisplay
+a      cl         debug    help      ll        quit     s        unt
+alias  clear      disable  ignore    longlist  r        source   until
+args   commands   display  interact  n         restart  step     up
+b      condition  down     j         next      return   tbreak   w
+break  cont       enable   jump      p         retval   u        whatis
+bt     continue   exit     l         pp        run      unalias  where
+
+Miscellaneous help topics:
+==========================
+exec  pdb
+
+(Pdb) n
+> c:\users\user\desktop\ls.py(11)<module>()
+-> key=50
+(Pdb) n
+> c:\users\user\desktop\ls.py(12)<module>()
+-> results=linear_search(l,key)
+(Pdb) n
+> c:\users\user\desktop\ls.py(13)<module>()
+-> print(results)
+(Pdb) n
+True
+--Return--
+> c:\users\user\desktop\ls.py(13)<module>()->None
+-> print(results)
+(Pdb) n
+--Call--
+Exception ignored in: <async_generator object _ag at 0x000001F9C7310800>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python36\lib\types.py", line 27, in _ag
+  File "C:\Users\User\AppData\Local\Programs\Python\Python36\lib\bdb.py", line 53, in trace_dispatch
+  File "C:\Users\User\AppData\Local\Programs\Python\Python36\lib\bdb.py", line 85, in dispatch_call
+  File "C:\Users\User\AppData\Local\Programs\Python\Python36\lib\pdb.py", line 251, in user_call
+  File "C:\Users\User\AppData\Local\Programs\Python\Python36\lib\pdb.py", line 343, in interaction
+AttributeError: 'NoneType' object has no attribute '_previous_sigint_handler'
+
+C:\Users\User\Desktop>python ls.py
+> c:\users\user\desktop\ls.py(10)<module>()
+-> l=[10,20,30,40,50,60,80]
+(Pdb) print(key)
+*** NameError: name 'key' is not defined
+(Pdb) print(l)
+*** NameError: name 'l' is not defined
+(Pdb) n
+> c:\users\user\desktop\ls.py(11)<module>()
+-> key=50
+(Pdb) s
+> c:\users\user\desktop\ls.py(12)<module>()
+-> results=linear_search(l,key)
+(Pdb) a
+(Pdb) s
+--Call--
+> c:\users\user\desktop\ls.py(2)linear_search()
+-> def linear_search(l,key):
+(Pdb) s
+> c:\users\user\desktop\ls.py(3)linear_search()
+-> for i in l:
+(Pdb) n
+> c:\users\user\desktop\ls.py(4)linear_search()
+-> if i==key:
+(Pdb) n
+> c:\users\user\desktop\ls.py(3)linear_search()
+-> for i in l:
+(Pdb) n
+> c:\users\user\desktop\ls.py(4)linear_search()
+-> if i==key:
+(Pdb) n
+> c:\users\user\desktop\ls.py(3)linear_search()
+-> for i in l:
+(Pdb) n
+> c:\users\user\desktop\ls.py(4)linear_search()
+-> if i==key:
+(Pdb) n
+> c:\users\user\desktop\ls.py(3)linear_search()
+-> for i in l:
+(Pdb) s
+> c:\users\user\desktop\ls.py(4)linear_search()
+-> if i==key:
+(Pdb) s
+> c:\users\user\desktop\ls.py(3)linear_search()
+-> for i in l:
+(Pdb) s
+> c:\users\user\desktop\ls.py(4)linear_search()
+-> if i==key:
+(Pdb) s
+> c:\users\user\desktop\ls.py(5)linear_search()
+-> return True
+(Pdb) s
+--Return--
+> c:\users\user\desktop\ls.py(5)linear_search()->True
+-> return True
+(Pdb) s
+> c:\users\user\desktop\ls.py(13)<module>()
+-> print(results)
+(Pdb) s
+True
+--Return--
+> c:\users\user\desktop\ls.py(13)<module>()->None
+-> print(results)
+(Pdb) s
+--Call--
+Exception ignored in: <async_generator object _ag at 0x00000222D6AC0800>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python36\lib\types.py", line 27, in _ag
+  File "C:\Users\User\AppData\Local\Programs\Python\Python36\lib\bdb.py", line 53, in trace_dispatch
+  File "C:\Users\User\AppData\Local\Programs\Python\Python36\lib\bdb.py", line 85, in dispatch_call
+  File "C:\Users\User\AppData\Local\Programs\Python\Python36\lib\pdb.py", line 251, in user_call
+  File "C:\Users\User\AppData\Local\Programs\Python\Python36\lib\pdb.py", line 343, in interaction
+AttributeError: 'NoneType' object has no attribute '_previous_sigint_handler'
+
+C:\Users\User\Desktop>python ls.py
+> c:\users\user\desktop\ls.py(10)<module>()
+-> l=[10,20,30,40,50,60,80]
+(Pdb) print(l)
+*** NameError: name 'l' is not defined
+(Pdb) s
+> c:\users\user\desktop\ls.py(11)<module>()
+-> key=50
+(Pdb) s
+> c:\users\user\desktop\ls.py(12)<module>()
+-> results=linear_search(l,key)
+(Pdb) s
+--Call--
+> c:\users\user\desktop\ls.py(2)linear_search()
+-> def linear_search(l,key):
+(Pdb) s
+> c:\users\user\desktop\ls.py(3)linear_search()
+-> for i in l:
+(Pdb) n
+> c:\users\user\desktop\ls.py(4)linear_search()
+-> if i==key:
+(Pdb) n
+> c:\users\user\desktop\ls.py(3)linear_search()
+-> for i in l:
+(Pdb) print(i,key)
+10 50
+(Pdb) n
+> c:\users\user\desktop\ls.py(4)linear_search()
+-> if i==key:
+(Pdb) print(i,key)
+20 50
+(Pdb)
+20 50
+(Pdb) n
+> c:\users\user\desktop\ls.py(3)linear_search()
+-> for i in l:
+(Pdb) print(i,key)
+20 50
+(Pdb) n
+> c:\users\user\desktop\ls.py(4)linear_search()
+-> if i==key:
+(Pdb) n
+> c:\users\user\desktop\ls.py(3)linear_search()
+-> for i in l:
+(Pdb) print(i,key)
+30 50
+(Pdb) n
+> c:\users\user\desktop\ls.py(4)linear_search()
+-> if i==key:
+(Pdb) n
+> c:\users\user\desktop\ls.py(3)linear_search()
+-> for i in l:
+(Pdb) print(i,key)
+40 50
+(Pdb) n
+> c:\users\user\desktop\ls.py(4)linear_search()
+-> if i==key:
+(Pdb) n
+> c:\users\user\desktop\ls.py(5)linear_search()
+-> return True
+(Pdb) print(i,key)
+50 50
+(Pdb) n
+--Return--
+> c:\users\user\desktop\ls.py(5)linear_search()->True
+-> return True
+(Pdb) n
+> c:\users\user\desktop\ls.py(13)<module>()
+-> print(results)
+(Pdb) n
+True
+--Return--
+> c:\users\user\desktop\ls.py(13)<module>()->None
+-> print(results)
+(Pdb) n
+--Call--
+Exception ignored in: <async_generator object _ag at 0x000001C47EC70800>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python36\lib\types.py", line 27, in _ag
+  File "C:\Users\User\AppData\Local\Programs\Python\Python36\lib\bdb.py", line 53, in trace_dispatch
+  File "C:\Users\User\AppData\Local\Programs\Python\Python36\lib\bdb.py", line 85, in dispatch_call
+  File "C:\Users\User\AppData\Local\Programs\Python\Python36\lib\pdb.py", line 251, in user_call
+  File "C:\Users\User\AppData\Local\Programs\Python\Python36\lib\pdb.py", line 343, in interaction
+AttributeError: 'NoneType' object has no attribute '_previous_sigint_handler'
+
+C:\Users\User\Desktop>python ls.py
+> c:\users\user\desktop\ls.py(10)<module>()
+-> l=[10,20,30,40,50,60,80]
+(Pdb) n
+> c:\users\user\desktop\ls.py(11)<module>()
+-> key=50
+(Pdb) n
+> c:\users\user\desktop\ls.py(12)<module>()
+-> results=linear_search(l,key)
+(Pdb) s
+--Call--
+> c:\users\user\desktop\ls.py(2)linear_search()
+-> def linear_search(l,key):
+(Pdb) s
+> c:\users\user\desktop\ls.py(3)linear_search()
+-> for i in l:
+(Pdb) n
+> c:\users\user\desktop\ls.py(4)linear_search()
+-> if i==key:
+(Pdb) r
+--Return--
+> c:\users\user\desktop\ls.py(5)linear_search()->True
+-> return True
+(Pdb) n
+> c:\users\user\desktop\ls.py(13)<module>()
+-> print(results)
+(Pdb) r
+True
+--Return--
+> c:\users\user\desktop\ls.py(13)<module>()->None
+-> print(results)
+(Pdb) c
+
+C:\Users\User\Desktop>python ls.py
+> c:\users\user\desktop\ls.py(10)<module>()
+-> l=[10,20,30,40,50,60,80]
+(Pdb) c
+True
+
+C:\Users\User\Desktop>python ls.py
+> c:\users\user\desktop\ls.py(10)<module>()
+-> l=[10,20,30,40,50,60,80]
+(Pdb) ls
+*** NameError: name 'ls' is not defined
+(Pdb) dir
+<built-in function dir>
+(Pdb) dir()
+['__annotations__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'linear_search', 'pdb']
+(Pdb) help
+
+Documented commands (type help <topic>):
+========================================
+EOF    c          d        h         list      q        rv       undisplay
+a      cl         debug    help      ll        quit     s        unt
+alias  clear      disable  ignore    longlist  r        source   until
+args   commands   display  interact  n         restart  step     up
+b      condition  down     j         next      return   tbreak   w
+break  cont       enable   jump      p         retval   u        whatis
+bt     continue   exit     l         pp        run      unalias  where
+
+Miscellaneous help topics:
+==========================
+exec  pdb
+
+(Pdb) exec pdb
+*** SyntaxError: Missing parentheses in call to 'exec'
+(Pdb) exec
+<built-in function exec>
+(Pdb) exec()
+*** TypeError: exec expected at least 1 arguments, got 0
+(Pdb) dir()
+['__annotations__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'linear_search', 'pdb']
+(Pdb) help()
+*** No help for '()'
+(Pdb) help
+
+Documented commands (type help <topic>):
+========================================
+EOF    c          d        h         list      q        rv       undisplay
+a      cl         debug    help      ll        quit     s        unt
+alias  clear      disable  ignore    longlist  r        source   until
+args   commands   display  interact  n         restart  step     up
+b      condition  down     j         next      return   tbreak   w
+break  cont       enable   jump      p         retval   u        whatis
+bt     continue   exit     l         pp        run      unalias  where
+
+Miscellaneous help topics:
+==========================
+exec  pdb
+
+(Pdb)

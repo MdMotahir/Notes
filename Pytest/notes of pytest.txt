@@ -1,0 +1,469 @@
+Microsoft Windows [Version 10.0.18362.778]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+C:\Users\User\Desktop\Pytest>ls
+test_utility.py  utility.py
+
+C:\Users\User\Desktop\Pytest>pytest
+================================================= test session starts =================================================
+platform win32 -- Python 3.6.5, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: C:\Users\User\Desktop\Pytest
+collected 3 items
+
+test_utility.py ..F                                                                                              [100%]
+
+====================================================== FAILURES =======================================================
+______________________________________________________ test_add3 ______________________________________________________
+
+    def test_add3():
+>       results=add(10,'python')
+
+test_utility.py:11:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+val1 = 10, val2 = 'python'
+
+    def add(val1,val2):
+>       return val1+val2
+E       TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+utility.py:2: TypeError
+=============================================== short test summary info ===============================================
+FAILED test_utility.py::test_add3 - TypeError: unsupported operand type(s) for +: 'int' and 'str'
+============================================= 1 failed, 2 passed in 0.92s =============================================
+
+C:\Users\User\Desktop\Pytest>pytest
+================================================= test session starts =================================================
+platform win32 -- Python 3.6.5, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: C:\Users\User\Desktop\Pytest
+collected 2 items
+
+test_utility.py ..                                                                                               [100%]
+
+================================================== 2 passed in 0.23s ==================================================
+
+C:\Users\User\Desktop\Pytest>pytest
+================================================= test session starts =================================================
+platform win32 -- Python 3.6.5, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: C:\Users\User\Desktop\Pytest
+collected 3 items
+
+test_utility.py ..F                                                                                              [100%]
+
+====================================================== FAILURES =======================================================
+______________________________________________________ test_add3 ______________________________________________________
+
+    def test_add3():
+>       results=add(10,'python')
+
+test_utility.py:11:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+val1 = 10, val2 = 'python'
+
+    def add(val1,val2):
+>       return val1+val2
+E       TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+utility.py:2: TypeError
+=============================================== short test summary info ===============================================
+FAILED test_utility.py::test_add3 - TypeError: unsupported operand type(s) for +: 'int' and 'str'
+============================================= 1 failed, 2 passed in 0.49s =============================================
+
+C:\Users\User\Desktop\Pytest>pytest
+================================================= test session starts =================================================
+platform win32 -- Python 3.6.5, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: C:\Users\User\Desktop\Pytest
+collected 2 items
+
+test_utility.py ..                                                                                               [100%]
+
+================================================== 2 passed in 0.28s ==================================================
+
+C:\Users\User\Desktop\Pytest>pytest
+================================================= test session starts =================================================
+platform win32 -- Python 3.6.5, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: C:\Users\User\Desktop\Pytest
+collected 3 items
+
+test_myfile.py F                                                                                                 [ 33%]
+test_utility.py ..                                                                                               [100%]
+
+====================================================== FAILURES =======================================================
+______________________________________________________ test_add3 ______________________________________________________
+
+    def test_add3():
+>       results=add(10,'python')
+
+test_myfile.py:4:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+val1 = 10, val2 = 'python'
+
+    def add(val1,val2):
+>       return val1+val2
+E       TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+utility.py:2: TypeError
+=============================================== short test summary info ===============================================
+FAILED test_myfile.py::test_add3 - TypeError: unsupported operand type(s) for +: 'int' and 'str'
+============================================= 1 failed, 2 passed in 0.30s =============================================
+
+C:\Users\User\Desktop\Pytest>pytest -v
+================================================= test session starts =================================================
+platform win32 -- Python 3.6.5, pytest-5.4.1, py-1.8.1, pluggy-0.13.1 -- c:\users\user\appdata\local\programs\python\python36\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\User\Desktop\Pytest
+collected 3 items
+
+test_myfile.py::test_add3 FAILED                                                                                 [ 33%]
+test_utility.py::test_add PASSED                                                                                 [ 66%]
+test_utility.py::test_add2 PASSED                                                                                [100%]
+
+====================================================== FAILURES =======================================================
+______________________________________________________ test_add3 ______________________________________________________
+
+    def test_add3():
+>       results=add(10,'python')
+
+test_myfile.py:4:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+val1 = 10, val2 = 'python'
+
+    def add(val1,val2):
+>       return val1+val2
+E       TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+utility.py:2: TypeError
+=============================================== short test summary info ===============================================
+FAILED test_myfile.py::test_add3 - TypeError: unsupported operand type(s) for +: 'int' and 'str'
+============================================= 1 failed, 2 passed in 0.46s =============================================
+
+C:\Users\User\Desktop\Pytest>pytest -v
+================================================= test session starts =================================================
+platform win32 -- Python 3.6.5, pytest-5.4.1, py-1.8.1, pluggy-0.13.1 -- c:\users\user\appdata\local\programs\python\python36\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\User\Desktop\Pytest
+collected 3 items
+
+test_myfile.py::test_add3 FAILED                                                                                 [ 33%]
+test_utility.py::test_add PASSED                                                                                 [ 66%]
+test_utility.py::test_add2 PASSED                                                                                [100%]
+
+====================================================== FAILURES =======================================================
+______________________________________________________ test_add3 ______________________________________________________
+
+    def test_add3():
+>       results=add(10,'python')
+
+test_myfile.py:4:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+val1 = 10, val2 = 'python'
+
+    def add(val1,val2):
+>       return val1+val2
+E       TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+utility.py:2: TypeError
+=============================================== short test summary info ===============================================
+FAILED test_myfile.py::test_add3 - TypeError: unsupported operand type(s) for +: 'int' and 'str'
+============================================= 1 failed, 2 passed in 0.46s =============================================
+
+C:\Users\User\Desktop\Pytest>pytest -v
+================================================= test session starts =================================================
+platform win32 -- Python 3.6.5, pytest-5.4.1, py-1.8.1, pluggy-0.13.1 -- c:\users\user\appdata\local\programs\python\python36\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\User\Desktop\Pytest
+collected 2 items
+
+test_utility.py::test_add PASSED                                                                                 [ 50%]
+test_utility.py::test_add2 PASSED                                                                                [100%]
+
+================================================== 2 passed in 0.24s ==================================================
+
+C:\Users\User\Desktop\Pytest>pytest -v test_myfile.py
+================================================= test session starts =================================================
+platform win32 -- Python 3.6.5, pytest-5.4.1, py-1.8.1, pluggy-0.13.1 -- c:\users\user\appdata\local\programs\python\python36\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\User\Desktop\Pytest
+collected 1 item
+
+test_myfile.py::test_add3 FAILED                                                                                 [100%]
+
+====================================================== FAILURES =======================================================
+______________________________________________________ test_add3 ______________________________________________________
+
+    def test_add3():
+        results=add(10,'python')
+>       assert results== 'invalid input'
+E       AssertionError: assert 'invalid' == 'invalid input'
+E         - invalid input
+E         + invalid
+
+test_myfile.py:5: AssertionError
+=============================================== short test summary info ===============================================
+FAILED test_myfile.py::test_add3 - AssertionError: assert 'invalid' == 'invalid input'
+================================================== 1 failed in 0.53s ==================================================
+
+C:\Users\User\Desktop\Pytest>pytest -v test_myfile.py
+================================================= test session starts =================================================
+platform win32 -- Python 3.6.5, pytest-5.4.1, py-1.8.1, pluggy-0.13.1 -- c:\users\user\appdata\local\programs\python\python36\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\User\Desktop\Pytest
+collected 1 item
+
+test_myfile.py::test_add3 PASSED                                                                                 [100%]
+
+================================================== 1 passed in 0.06s ==================================================
+
+C:\Users\User\Desktop\Pytest>pytest -v test_myfile.py
+================================================= test session starts =================================================
+platform win32 -- Python 3.6.5, pytest-5.4.1, py-1.8.1, pluggy-0.13.1 -- c:\users\user\appdata\local\programs\python\python36\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\User\Desktop\Pytest
+collected 1 item
+
+test_myfile.py::test_add3 FAILED                                                                                 [100%]
+
+====================================================== FAILURES =======================================================
+______________________________________________________ test_add3 ______________________________________________________
+
+    def test_add3():
+        results=add(10,'python')
+>       assert results== 'invalid input'
+E       AssertionError: assert 'invalidinput' == 'invalid input'
+E         - invalid input
+E         ?        -
+E         + invalidinput
+
+test_myfile.py:5: AssertionError
+=============================================== short test summary info ===============================================
+FAILED test_myfile.py::test_add3 - AssertionError: assert 'invalidinput' == 'invalid input'
+================================================== 1 failed in 0.52s ==================================================
+
+C:\Users\User\Desktop\Pytest>pytest -v test_myfile.py
+================================================= test session starts =================================================
+platform win32 -- Python 3.6.5, pytest-5.4.1, py-1.8.1, pluggy-0.13.1 -- c:\users\user\appdata\local\programs\python\python36\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\User\Desktop\Pytest
+collected 1 item
+
+test_myfile.py::test_add3 FAILED                                                                                 [100%]
+
+====================================================== FAILURES =======================================================
+______________________________________________________ test_add3 ______________________________________________________
+
+    def test_add3():
+        results=add(10,'python')
+>       assert results== 'invalid input'
+E       AssertionError: assert 'invalid Input' == 'invalid input'
+E         - invalid input
+E         ?         ^
+E         + invalid Input
+E         ?         ^
+
+test_myfile.py:5: AssertionError
+=============================================== short test summary info ===============================================
+FAILED test_myfile.py::test_add3 - AssertionError: assert 'invalid Input' == 'invalid input'
+================================================== 1 failed in 0.44s ==================================================
+
+C:\Users\User\Desktop\Pytest>pytest -v test_myfile.py
+================================================= test session starts =================================================
+platform win32 -- Python 3.6.5, pytest-5.4.1, py-1.8.1, pluggy-0.13.1 -- c:\users\user\appdata\local\programs\python\python36\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\User\Desktop\Pytest
+collected 1 item
+
+test_myfile.py::test_add3 PASSED                                                                                 [100%]
+
+================================================== 1 passed in 0.03s ==================================================
+
+C:\Users\User\Desktop\Pytest>pytest -v test_utility.py
+================================================= test session starts =================================================
+platform win32 -- Python 3.6.5, pytest-5.4.1, py-1.8.1, pluggy-0.13.1 -- c:\users\user\appdata\local\programs\python\python36\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\User\Desktop\Pytest
+collected 2 items
+
+test_utility.py::test_add PASSED                                                                                 [ 50%]
+test_utility.py::test_add2 PASSED                                                                                [100%]
+
+================================================== 2 passed in 0.03s ==================================================
+
+C:\Users\User\Desktop\Pytest>pytest test_utility.py
+================================================= test session starts =================================================
+platform win32 -- Python 3.6.5, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: C:\Users\User\Desktop\Pytest
+collected 2 items
+
+test_utility.py ..                                                                                               [100%]
+
+================================================== 2 passed in 0.03s ==================================================
+
+C:\Users\User\Desktop\Pytest>pytest test_myfile.py
+================================================= test session starts =================================================
+platform win32 -- Python 3.6.5, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: C:\Users\User\Desktop\Pytest
+collected 1 item
+
+test_myfile.py .                                                                                                 [100%]
+
+================================================== 1 passed in 0.06s ==================================================
+
+C:\Users\User\Desktop\Pytest>pytest -v test_utility.py::test_add
+================================================= test session starts =================================================
+platform win32 -- Python 3.6.5, pytest-5.4.1, py-1.8.1, pluggy-0.13.1 -- c:\users\user\appdata\local\programs\python\python36\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\User\Desktop\Pytest
+collected 1 item
+
+test_utility.py::test_add PASSED                                                                                 [100%]
+
+================================================== 1 passed in 0.09s ==================================================
+
+C:\Users\User\Desktop\Pytest>pytest -v test_utility.py::test_add test_utility.py::test_add2
+================================================= test session starts =================================================
+platform win32 -- Python 3.6.5, pytest-5.4.1, py-1.8.1, pluggy-0.13.1 -- c:\users\user\appdata\local\programs\python\python36\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\User\Desktop\Pytest
+collected 2 items
+
+test_utility.py::test_add PASSED                                                                                 [ 50%]
+test_utility.py::test_add2 PASSED                                                                                [100%]
+
+================================================== 2 passed in 0.05s ==================================================
+
+C:\Users\User\Desktop\Pytest>pytest -v -m 'execute'
+================================================= test session starts =================================================
+platform win32 -- Python 3.6.5, pytest-5.4.1, py-1.8.1, pluggy-0.13.1 -- c:\users\user\appdata\local\programs\python\python36\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\User\Desktop\Pytest
+collected 3 items
+
+test_myfile.py::test_add3 PASSED                                                                                 [ 33%]
+test_utility.py::test_add PASSED                                                                                 [ 66%]
+test_utility.py::test_add2 PASSED                                                                                [100%]
+
+================================================== warnings summary ===================================================
+test_myfile.py:3
+  C:\Users\User\Desktop\Pytest\test_myfile.py:3: PytestUnknownMarkWarning: Unknown pytest.mark.exicute - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/latest/mark.html
+    @pytest.mark.exicute
+
+test_utility.py:7
+  C:\Users\User\Desktop\Pytest\test_utility.py:7: PytestUnknownMarkWarning: Unknown pytest.mark.exicute - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/latest/mark.html
+    @pytest.mark.exicute   # if we have lage test function and we want only some function is execute then we mark that by any name like here i mark that execute.
+
+-- Docs: https://docs.pytest.org/en/latest/warnings.html
+============================================ 3 passed, 2 warnings in 0.45s ============================================
+
+C:\Users\User\Desktop\Pytest>pytest -v -m 'execute'
+================================================= test session starts =================================================
+platform win32 -- Python 3.6.5, pytest-5.4.1, py-1.8.1, pluggy-0.13.1 -- c:\users\user\appdata\local\programs\python\python36\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\User\Desktop\Pytest
+collected 3 items
+
+test_myfile.py::test_add3 PASSED                                                                                 [ 33%]
+test_utility.py::test_add PASSED                                                                                 [ 66%]
+test_utility.py::test_add2 PASSED                                                                                [100%]
+
+================================================== warnings summary ===================================================
+test_utility.py:3
+  C:\Users\User\Desktop\Pytest\test_utility.py:3: PytestUnknownMarkWarning: Unknown pytest.mark.exicute - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/latest/mark.html
+    @pytest.mark.exicute
+
+test_utility.py:8
+  C:\Users\User\Desktop\Pytest\test_utility.py:8: PytestUnknownMarkWarning: Unknown pytest.mark.exicute - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/latest/mark.html
+    @pytest.mark.exicute   # if we have lage test function and we want only some function is execute then we mark that by any name like here i mark that execute.
+
+-- Docs: https://docs.pytest.org/en/latest/warnings.html
+============================================ 3 passed, 2 warnings in 0.31s ============================================
+
+C:\Users\User\Desktop\Pytest>pytest -v -m 'execute'
+================================================= test session starts =================================================
+platform win32 -- Python 3.6.5, pytest-5.4.1, py-1.8.1, pluggy-0.13.1 -- c:\users\user\appdata\local\programs\python\python36\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\User\Desktop\Pytest
+collected 3 items
+
+test_myfile.py::test_add3 PASSED                                                                                 [ 33%]
+test_utility.py::test_add PASSED                                                                                 [ 66%]
+test_utility.py::test_add2 PASSED                                                                                [100%]
+
+================================================== warnings summary ===================================================
+test_utility.py:3
+  C:\Users\User\Desktop\Pytest\test_utility.py:3: PytestUnknownMarkWarning: Unknown pytest.mark.exicute - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/latest/mark.html
+    @pytest.mark.exicute
+
+test_utility.py:8
+  C:\Users\User\Desktop\Pytest\test_utility.py:8: PytestUnknownMarkWarning: Unknown pytest.mark.exicute - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/latest/mark.html
+    @pytest.mark.exicute
+
+-- Docs: https://docs.pytest.org/en/latest/warnings.html
+============================================ 3 passed, 2 warnings in 0.24s ============================================
+
+C:\Users\User\Desktop\Pytest>pytest -v -m 'mark1'
+================================================= test session starts =================================================
+platform win32 -- Python 3.6.5, pytest-5.4.1, py-1.8.1, pluggy-0.13.1 -- c:\users\user\appdata\local\programs\python\python36\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\User\Desktop\Pytest
+collected 3 items
+
+test_myfile.py::test_add3 PASSED                                                                                 [ 33%]
+test_utility.py::test_add PASSED                                                                                 [ 66%]
+test_utility.py::test_add2 PASSED                                                                                [100%]
+
+================================================== warnings summary ===================================================
+test_utility.py:3
+  C:\Users\User\Desktop\Pytest\test_utility.py:3: PytestUnknownMarkWarning: Unknown pytest.mark.mark1 - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/latest/mark.html
+    @pytest.mark.mark1
+
+test_utility.py:8
+  C:\Users\User\Desktop\Pytest\test_utility.py:8: PytestUnknownMarkWarning: Unknown pytest.mark.mark1 - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/latest/mark.html
+    @pytest.mark.mark1 # if we have lage test function and we want only some function is execute then we mark that by any name like here i mark that execute.
+
+-- Docs: https://docs.pytest.org/en/latest/warnings.html
+============================================ 3 passed, 2 warnings in 0.20s ============================================
+
+C:\Users\User\Desktop\Pytest>pytest -v test_utility::test_add2
+================================================= test session starts =================================================
+platform win32 -- Python 3.6.5, pytest-5.4.1, py-1.8.1, pluggy-0.13.1 -- c:\users\user\appdata\local\programs\python\python36\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\User\Desktop\Pytest
+collected 0 items
+
+================================================ no tests ran in 0.04s ================================================
+ERROR: file not found: test_utility::test_add2
+
+
+C:\Users\User\Desktop\Pytest>pytest -v test_utility::test_add2
+================================================= test session starts =================================================
+platform win32 -- Python 3.6.5, pytest-5.4.1, py-1.8.1, pluggy-0.13.1 -- c:\users\user\appdata\local\programs\python\python36\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\User\Desktop\Pytest
+collected 0 items
+
+================================================ no tests ran in 0.01s ================================================
+ERROR: file not found: test_utility::test_add2
+
+
+C:\Users\User\Desktop\Pytest>pytest test_utility.py::test_add2 -v
+================================================= test session starts =================================================
+platform win32 -- Python 3.6.5, pytest-5.4.1, py-1.8.1, pluggy-0.13.1 -- c:\users\user\appdata\local\programs\python\python36\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\User\Desktop\Pytest
+collected 1 item
+
+test_utility.py::test_add2[python-java-pythonjava] PASSED                                                        [100%]
+
+================================================== warnings summary ===================================================
+test_utility.py:3
+  C:\Users\User\Desktop\Pytest\test_utility.py:3: PytestUnknownMarkWarning: Unknown pytest.mark.mark1 - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/latest/mark.html
+    @pytest.mark.mark1
+
+-- Docs: https://docs.pytest.org/en/latest/warnings.html
+============================================ 1 passed, 1 warning in 0.67s =============================================
+
+C:\Users\User\Desktop\Pytest>

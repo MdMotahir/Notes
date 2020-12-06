@@ -1,0 +1,295 @@
+C:\Users\User>pip install virtualenv		(#here first your computer has virtualenv. if not then install by useing 														this code)
+Requirement already satisfied: virtualenv in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (20.0.18)
+Requirement already satisfied: appdirs<2,>=1.4.3 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from virtualenv) (1.4.3)
+Requirement already satisfied: importlib-metadata<2,>=0.12; python_version < "3.8" in c:\users\user\appdata\roaming\python\python36\site-packages (from virtualenv) (1.6.0)
+Requirement already satisfied: filelock<4,>=3.0.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from virtualenv) (3.0.12)
+Requirement already satisfied: distlib<1,>=0.3.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from virtualenv) (0.3.0)
+Requirement already satisfied: importlib-resources<2,>=1.0; python_version < "3.7" in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from virtualenv) (1.4.0)
+Requirement already satisfied: six<2,>=1.9.0 in c:\users\user\appdata\roaming\python\python36\site-packages (from virtualenv) (1.14.0)
+Requirement already satisfied: zipp>=0.5 in c:\users\user\appdata\roaming\python\python36\site-packages (from importlib-metadata<2,>=0.12; python_version < "3.8"->virtualenv) (3.1.0)
+
+
+C:\Users\User>pip freeze		(#here using this code you get to know about your package is intall or not)
+appdirs==1.4.3
+atomicwrites==1.3.0
+attrs==19.3.0
+backcall==0.1.0
+beautifulsoup4==4.8.2
+bleach==3.1.4
+certifi==2019.11.28
+chardet==3.0.4
+colorama==0.4.3
+decorator==4.4.2
+defusedxml==0.6.0
+distlib==0.3.0
+entrypoints==0.3
+filelock==3.0.12
+idna==2.9
+importlib-metadata==1.6.0
+importlib-resources==1.4.0
+ipykernel==5.2.0
+ipynb==0.5.1
+ipython==7.13.0
+ipython-genutils==0.2.0
+ipywidgets==7.5.1
+jedi==0.16.0
+Jinja2==2.11.1
+jsonschema==3.2.0
+jupyter==1.0.0
+jupyter-client==6.1.2
+jupyter-console==6.1.0
+jupyter-core==4.6.3
+MarkupSafe==1.1.1
+mistune==0.8.4
+more-itertools==8.2.0
+mysql-connector-python==8.0.20
+nbconvert==5.6.1
+nbformat==5.0.4
+notebook==6.0.3
+package==0.0.1
+packaging==20.3
+pandocfilters==1.4.2
+parso==0.6.2
+pickleshare==0.7.5
+pluggy==0.13.1
+prometheus-client==0.7.1
+prompt-toolkit==3.0.5
+py==1.8.1
+Pygments==2.6.1
+pyparsing==2.4.6
+pyrsistent==0.16.0
+pytest==5.4.1
+python-dateutil==2.8.1
+pywin32==227
+pywinpty==0.5.7
+pyzmq==19.0.0
+qtconsole==4.7.2
+QtPy==1.9.0
+requests==2.23.0
+Send2Trash==1.5.0
+six==1.14.0
+soupsieve==2.0
+terminado==0.8.3
+testpath==0.4.4
+tornado==6.0.4
+traitlets==4.3.3
+urllib3==1.25.8
+virtualenv==20.0.18					(#here is this virtualenv is present so it is already insall)
+wcwidth==0.1.9
+webencodings==0.5.1
+widgetsnbextension==3.5.1
+xmltodict==0.12.0
+zipp==3.1.0
+
+
+C:\Users\User>virtualenv django-env			(#here we creat a virtual envaroment in the name of django-env)
+created virtual environment CPython3.6.5.final.0-64 in 18194ms
+  creator CPython3Windows(dest=C:\Users\User\django-env, clear=False, global=False)
+  seeder FromAppData(download=False, pip=latest, setuptools=latest, wheel=latest, via=copy, app_data_dir=C:\Users\User\AppData\Local\pypa\virtualenv\seed-app-data\v1.0.1)
+  activators BashActivator,BatchActivator,FishActivator,PowerShellActivator,PythonActivator,XonshActivator
+
+C:\Users\User>dir					(#using dir in that proper folder check the file)
+ Volume in drive C has no label.
+ Volume Serial Number is FE7E-0B18
+
+ Directory of C:\Users\User
+
+05/19/2020  09:16 AM    <DIR>          .
+05/19/2020  09:16 AM    <DIR>          ..
+09/20/2019  12:19 PM    <DIR>          .android
+04/19/2020  08:24 PM               724 .bash_history
+09/11/2019  10:37 AM    <DIR>          .idlerc
+03/29/2020  04:03 PM    <DIR>          .ipython
+03/29/2020  05:34 PM    <DIR>          .jupyter
+01/25/2020  07:15 PM    <DIR>          .vscode
+05/18/2020  09:00 PM    <DIR>          3D Objects
+05/18/2020  09:01 PM    <DIR>          Contacts
+05/18/2020  09:01 PM    <DIR>          Desktop
+05/19/2020  09:16 AM    <DIR>          django-env	(#here is this file)
+05/18/2020  09:01 PM    <DIR>          Documents
+05/19/2020  09:06 AM    <DIR>          Downloads
+05/18/2020  09:01 PM    <DIR>          Favorites
+05/18/2020  09:01 PM    <DIR>          Links
+05/18/2020  09:01 PM    <DIR>          Music
+05/18/2020  09:02 PM         4,718,592 NTUSER.DAT
+05/11/2020  10:43 AM    <DIR>          OneDrive
+05/18/2020  09:01 PM    <DIR>          Pictures
+05/18/2020  09:01 PM    <DIR>          Saved Games
+05/18/2020  09:01 PM    <DIR>          Searches
+04/04/2017  08:15 PM    <DIR>          Tracing
+05/18/2020  09:01 PM    <DIR>          Videos
+               2 File(s)      4,719,316 bytes
+              22 Dir(s)  125,983,690,752 bytes free
+
+
+
+C:\Users\User>cd .\django-env			(#useing cd we enter into that folder)
+
+
+C:\Users\User\django-env>dir			(#again useing dir we cheak what present in that file)
+ Volume in drive C has no label.
+ Volume Serial Number is FE7E-0B18
+
+ Directory of C:\Users\User\django-env
+
+05/19/2020  09:16 AM    <DIR>          .
+05/19/2020  09:16 AM    <DIR>          ..
+05/19/2020  09:16 AM    <DIR>          Lib
+05/19/2020  09:17 AM               401 pyvenv.cfg
+05/19/2020  09:17 AM    <DIR>          Scripts			(#main things is this scripts)
+               1 File(s)            401 bytes
+               4 Dir(s)  125,983,772,672 bytes free
+
+C:\Users\User\django-env>dir scripts		(#if we use this dir scripts then we get all file under the scripts)
+ Volume in drive C has no label.
+ Volume Serial Number is FE7E-0B18
+
+ Directory of C:\Users\User\django-env\scripts
+
+05/19/2020  09:17 AM    <DIR>          .
+05/19/2020  09:17 AM    <DIR>          ..
+05/19/2020  09:17 AM             2,301 activate
+05/19/2020  09:17 AM             1,057 activate.bat
+05/19/2020  09:17 AM             3,167 activate.fish
+05/19/2020  09:17 AM             1,815 activate.ps1
+05/19/2020  09:17 AM             1,204 activate.xsh
+05/19/2020  09:17 AM             1,225 activate_this.py
+05/19/2020  09:17 AM               529 deactivate.bat
+05/19/2020  09:16 AM           106,363 easy_install-3.6.exe
+05/19/2020  09:16 AM           106,363 easy_install.exe
+05/19/2020  09:16 AM           106,363 easy_install3.exe
+05/19/2020  09:17 AM           106,354 pip-3.6.exe
+05/19/2020  09:17 AM           106,354 pip.exe
+05/19/2020  09:17 AM           106,354 pip3.6.exe
+05/19/2020  09:17 AM           106,354 pip3.exe
+05/19/2020  09:17 AM                25 pydoc.bat
+05/19/2020  09:16 AM           197,784 pyexpat.pyd
+05/19/2020  09:16 AM           100,504 python.exe
+05/19/2020  09:16 AM            58,520 python3.dll
+05/19/2020  09:16 AM         3,610,776 python36.dll
+05/19/2020  09:16 AM            98,968 pythonw.exe
+05/19/2020  09:16 AM            27,288 select.pyd
+05/19/2020  09:16 AM         1,153,176 sqlite3.dll
+05/19/2020  09:16 AM         1,666,048 tcl86t.dll
+05/19/2020  09:16 AM         1,967,104 tk86t.dll
+05/19/2020  09:16 AM           906,392 unicodedata.pyd
+05/19/2020  09:16 AM            87,888 vcruntime140.dll
+05/19/2020  09:16 AM           106,341 wheel-3.6.exe
+05/19/2020  09:16 AM           106,341 wheel.exe
+05/19/2020  09:16 AM           106,341 wheel3.exe
+05/19/2020  09:16 AM            28,312 winsound.pyd
+05/19/2020  09:16 AM            60,568 _asyncio.pyd
+05/19/2020  09:16 AM            94,872 _bz2.pyd
+05/19/2020  09:16 AM           130,712 _ctypes.pyd
+05/19/2020  09:16 AM            31,896 _ctypes_test.pyd
+05/19/2020  09:16 AM           269,464 _decimal.pyd
+05/19/2020  09:16 AM            25,240 _distutils_findvs.pyd
+05/19/2020  09:16 AM           170,136 _elementtree.pyd
+05/19/2020  09:16 AM         1,664,152 _hashlib.pyd
+05/19/2020  09:16 AM           254,616 _lzma.pyd
+05/19/2020  09:16 AM            39,576 _msi.pyd
+05/19/2020  09:16 AM            29,848 _multiprocessing.pyd
+05/19/2020  09:16 AM            43,160 _overlapped.pyd
+05/19/2020  09:16 AM            73,880 _socket.pyd
+05/19/2020  09:16 AM            85,656 _sqlite3.pyd
+05/19/2020  09:16 AM         2,061,464 _ssl.pyd
+05/19/2020  09:16 AM            52,376 _testbuffer.pyd
+05/19/2020  09:16 AM            94,360 _testcapi.pyd
+05/19/2020  09:16 AM            24,216 _testconsole.pyd
+05/19/2020  09:16 AM            22,680 _testimportmultiple.pyd
+05/19/2020  09:16 AM            30,872 _testmultiphase.pyd
+05/19/2020  09:16 AM            69,784 _tkinter.pyd
+              51 File(s)     16,307,139 bytes
+               2 Dir(s)  125,983,510,528 bytes free
+
+C:\Users\User\django-env>cd scripts		(#go through the scripts useing cd)
+
+
+C:\Users\User\django-env\Scripts>activate	(#then use code activate. which active the scripts)
+
+(django-env) C:\Users\User\django-env\Scripts>	(#then wdd get a (django-env) before this)
+
+(django-env) C:\Users\User\django-env\Scripts>pip install django ==2.2.5	(#then install django)
+ERROR: Invalid requirement: '==2.2.5'
+WARNING: You are using pip version 20.0.2; however, version 20.1 is available.
+You should consider upgrading via the 'C:\Users\User\django-env\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(django-env) C:\Users\User\django-env\Scripts>pip install django==2.2.5
+Collecting django==2.2.5
+  Downloading Django-2.2.5-py3-none-any.whl (7.5 MB)
+     |████████████████████████████████| 7.5 MB 105 kB/s
+Collecting pytz
+  Downloading pytz-2020.1-py2.py3-none-any.whl (510 kB)
+     |████████████████████████████████| 510 kB 251 kB/s
+Collecting sqlparse
+  Downloading sqlparse-0.3.1-py2.py3-none-any.whl (40 kB)
+     |████████████████████████████████| 40 kB 28 kB/s
+Installing collected packages: pytz, sqlparse, django
+Successfully installed django-2.2.5 pytz-2020.1 sqlparse-0.3.1
+WARNING: You are using pip version 20.0.2; however, version 20.1 is available.
+You should consider upgrading via the 'C:\Users\User\django-env\Scripts\python.exe -m pip install --upgrade pip' command.
+
+
+
+(django-env) C:\Users\User\django-env\Scripts>
+
+(django-env) C:\Users\User\django-env\Scripts>cd ..
+
+(django-env) C:\Users\User\django-env>pip list		(#after we check details of file useing pip list)
+Package    Version
+---------- -------
+Django     2.2.5
+pip        20.0.2
+pytz       2020.1
+setuptools 46.1.3
+sqlparse   0.3.1
+wheel      0.34.2
+WARNING: You are using pip version 20.0.2; however, version 20.1 is available.
+You should consider upgrading via the 'C:\Users\User\django-env\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(django-env) C:\Users\User\django-env>django-admin startproject django_project
+							(#here we have a django_project name file creat django-admin 													startproject)
+
+(django-env) C:\Users\User\django-env>dir
+ Volume in drive C has no label.
+ Volume Serial Number is FE7E-0B18
+
+ Directory of C:\Users\User\django-env
+
+05/19/2020  09:34 AM    <DIR>          .
+05/19/2020  09:34 AM    <DIR>          ..
+05/19/2020  09:34 AM    <DIR>          django_project		(#here is the file)
+05/19/2020  09:16 AM    <DIR>          Lib
+05/19/2020  09:17 AM               401 pyvenv.cfg
+05/19/2020  09:28 AM    <DIR>          Scripts
+               1 File(s)            401 bytes
+               5 Dir(s)  125,908,881,408 bytes free
+
+
+(django-env) C:\Users\User\django-env>cd django_project		(#go to the proper file)
+
+(django-env) C:\Users\User\django-env\django_project>dir
+ Volume in drive C has no label.
+ Volume Serial Number is FE7E-0B18
+
+ Directory of C:\Users\User\django-env\django_project
+
+05/19/2020  09:34 AM    <DIR>          .
+05/19/2020  09:34 AM    <DIR>          ..
+05/19/2020  09:34 AM    <DIR>          django_project
+05/19/2020  09:34 AM               655 manage.py		(#this is the main file)
+               1 File(s)            655 bytes
+               3 Dir(s)  125,912,158,208 bytes free
+
+(django-env) C:\Users\User\django-env\django_project>python manage.py runserver (#run this file by this code)
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+May 19, 2020 - 09:36:39
+Django version 2.2.5, using settings 'django_project.settings'
+Starting development server at http://127.0.0.1:8000/		(#copy and use his url)
+Quit the server with CTRL-BREAK.

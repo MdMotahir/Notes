@@ -1,0 +1,82 @@
+to install git we use
+	1- apt install git -y (this is for linux)
+	
+to downlode a reprository from git to any particular system
+	git clone url		(for pasing we can use shift+ctrl+v)
+		url = https://github.com/MdMotahir/Backend-Part
+	ex - git clone https://github.com/MdMotahir/Backend-Part
+
+if i use ls -a then we get all file and directory. if that is hidden then that also seen.
+		hidden directory always start with '.'.
+
+to get last change in repisoratory
+	git log
+	after useing git log we get a commit id
+		then we use that particular id to know more about that.
+	git show commi_id
+	ex- git show 05a70552f13c1eb371ac42915fc5ff68c0903a87
+	
+	for geting ou from that part we use 'q'.
+
+to add my folder or file to a repisoratory
+	git init
+	git add file_name	(this is only for adding one file)
+		or
+	git add .
+	
+	git config --global user.email "mdmotahiralam@gmail.com"
+	git config --global user.name "MdMotahir"
+	
+	git commit -m "My First Commit" (This is my comit msg)
+	
+	git remote add origin https://github.com/MdMotahir/LearningGit.git	(here the url for my repository)
+	
+	git push -u origin master	(Done)
+
+
+we have a comand git status which so the status of current directory.
+	basically if that is not in your repositotry then shown.
+	(git status)
+
+to rename a file then we use
+	mv old_file_name new_file_name	(mv new.py today.py)
+	git status
+	git add .
+	git status
+	git commit -m "msg"
+	git push	(Done)
+
+
+to ge about a paricular version in our commit 
+	we go to commit section
+	then copy that commit id
+	then we use
+		git checkout commit_id	(git checkout d5dd797d50bf7ecf8fb93ab1bd07855f1a4da175)
+	then ls
+	we go older version file. (done)
+
+for short cut we use git commit -am "msg"
+	this is only for old file ehich is alreadu in repository
+	here -a means add
+		and m for comit part
+
+for cheack about branch we use
+	git branch -a
+for creat a branch we use
+	git branch name (git branch dev-edyoda)
+for uptudate the branches we use
+	git pull origin master
+for change the branch we use
+	git checkout branch_name 	(git checkout dev-edyoda)
+for check it we use =
+	git branch -a
+		here we get a star mark before that particular branch
+
+after changing branch we play with code then after commit and push we get our 2 branch with their respective code
+	one is master branch where older or main code is present
+	2nd one is our new branch where we use save code after changing that.
+
+if we use git pull origin dev-edyoda
+	then we marge this code with master code.
+	then we use git push
+		after that we see that in github
